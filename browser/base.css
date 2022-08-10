@@ -1,0 +1,239 @@
+:root {
+  --gap: 1rem;
+  --border-light: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+.page,
+.body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.page.body {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-top: constant(safe-area-inset-top);
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.body {
+  min-height: 100%;
+}
+
+div,
+section {
+  box-sizing: border-box;
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: var(--gap, 12px);
+}
+
+.pdl,
+.pdh,
+.pd {
+  padding-left: var(--gap, 12px);
+}
+
+.pdr,
+.pdh,
+.pd {
+  padding-right: var(--gap, 12px);
+}
+
+.pdt,
+.pdv,
+.pd {
+  padding-top: var(--gap, 12px);
+}
+
+.pdb,
+.pdv,
+.pd {
+  padding-bottom: var(--gap, 12px);
+}
+
+.bd1b,
+.bd {
+  border-bottom: 1px solid currentColor;
+}
+
+.bd1t,
+.bd {
+  border-bottom: 1px solid currentColor;
+}
+
+.bd1b_op,
+.bd1t_op {
+  border: none;
+  position: relative;
+}
+
+.bd1b_op::after,
+.bd1t_op::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: currentColor;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.bd1b_op::after {
+  bottom: 0;
+}
+
+.bd1t_op::before {
+  top: 0;
+}
+
+.mgl,
+.mgh,
+.mg {
+  margin-left: var(--gap, 12px);
+}
+
+.mg0 {
+  margin: 0;
+}
+
+.pd0 {
+  padding: 0;
+}
+
+.mgr,
+.mgh,
+.mg {
+  margin-right: var(--gap, 12px);
+}
+
+.mgt,
+.mgv,
+.mg {
+  margin-top: var(--gap, 12px);
+}
+
+.mgb,
+.mgv,
+.mg {
+  margin-bottom: var(--gap, 12px);
+}
+
+.scroll-y {
+  overflow-y: scroll;
+}
+
+.frow,
+.fcol,
+.fcnt {
+  display: flex;
+}
+
+.main {
+  min-height: 100%;
+}
+
+.frow {
+  flex-direction: row;
+}
+
+.frow.rev {
+  flex-direction: row-reverse;
+}
+
+.fcol {
+  flex-direction: column;
+}
+
+.fcol.rev {
+  flex-direction: column-reverse;
+}
+
+.f1 {
+  flex: 1;
+}
+
+.fcnt,
+.cntx {
+  justify-content: center;
+}
+
+.fcnt,
+.cnty {
+  align-items: center;
+}
+
+.fbtw {
+  justify-content: space-between;
+}
+
+.fwrap {
+  flex-wrap: wrap;
+}
+
+.fsc {
+  align-self: center;
+}
+
+.fullview {
+  position: fixed;
+  width: 100vw;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.fullview.mask {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* width,height */
+.w100p {
+  width: 100%;
+}
+
+.h100p {
+  height: 100%;
+}
+
+.w100w {
+  width: 100vw;
+}
+
+.h100h {
+  height: 100vh;
+}
+
+.bs_bb {
+  box-sizing: border-box;
+}
+
+.pabs,
+.pabs_00 {
+  position: absolute;
+}
+
+.pabs_00 {
+  top: 0;
+  left: 0;
+}
+
+.prel {
+  position: relative;
+}
+
+.pfix {
+  position: fixed;
+}
